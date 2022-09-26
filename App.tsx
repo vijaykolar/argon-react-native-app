@@ -11,8 +11,11 @@ import {
   extendTheme,
   VStack,
   Box,
+  View,
 } from "native-base";
 import NativeBaseIcon from "./components/NativeBaseIcon";
+import AppBar from "./components/Appbar";
+import SearchBar from "./components/SearchBar";
 
 // Define the config
 const config = {
@@ -29,6 +32,11 @@ declare module "native-base" {
 export default function App() {
   return (
     <NativeBaseProvider>
+      <View p={4}>
+        <AppBar />
+        <SearchBar />
+      </View>
+
       <Center
         _dark={{ bg: "blueGray.900" }}
         _light={{ bg: "blueGray.50" }}
@@ -52,7 +60,7 @@ export default function App() {
               _dark={{ bg: "blueGray.800" }}
               _light={{ bg: "blueGray.200" }}
             >
-              App.js
+              App.js dd
             </Box>
             <Text>and save to reload.</Text>
           </HStack>
@@ -81,7 +89,7 @@ function ToggleDarkMode() {
           colorMode === "light" ? "switch to dark mode" : "switch to light mode"
         }
       />
-      <Text>Light</Text>
+      <Text>Light ddd</Text>
     </HStack>
   );
 }
