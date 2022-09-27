@@ -9,7 +9,7 @@ function AppBar() {
   return (
     <>
       <StatusBar barStyle="light-content" />
-      <Box safeAreaTop bg={isAndroid ? "violet.600" : "white"} />
+      <Box safeAreaTop bg={isAndroid ? "violet.600" : "transparent"} />
       <HStack
         // bg="violet.600"
         // px="1"
